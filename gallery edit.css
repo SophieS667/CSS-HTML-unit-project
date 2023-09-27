@@ -1,0 +1,63 @@
+/*Default browser styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Style for the header section */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Style for the main content area (pretty much just removed the margin) */
+h1 {
+    margin: 0;
+}
+
+/* Adds padding, centers content, and sets a max width the main can be */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style for the gallery section (placement and wrap of items) */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Style for individual gallery items (color, border, padding amount, and flex) */
+.gallery-item {
+    flex: 1;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Style for images within gallery items (makes sure the image fits its container) */
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style for image descriptions (just gives it some space) */
+.gallery-item p {
+    margin-top: 10px;
+}
+
+
+/* Style for the footer section (fancy little bottom, color, and spacing) */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

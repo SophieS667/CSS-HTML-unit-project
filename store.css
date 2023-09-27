@@ -1,0 +1,31 @@
+/* CSS for the navigation bar */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center align the navigation links */
+}
+
+nav ul.navbar li {
+    display: inline;
+}
+
+nav ul.navbar li a {
+    display: inline-block;
+    background-color: #555; /* Button background color */
+    color: white; /* Text color of the links */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-right: 10px; /* Space between buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+}
+
+nav ul.navbar li a:hover {
+    background-color: #555; /* Background color of the links on hover */
+}
