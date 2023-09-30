@@ -29,3 +29,36 @@ nav ul.navbar li a {
 nav ul.navbar li a:hover {
     background-color: #555; /* Background color of the links on hover */
 }
+body{
+    display:grid;
+    gap:5px;
+
+grid-template-columns: [first] 1fr [second] 1fr [third] 1fr [end];
+grid-template-rows: [uno] 1fr [dos] 1fr [tres] 1fr [quatro] 1fr [last] 1fr;
+
+justify-items: stretch;
+align-items: stretch;
+}
+
+.item-1{
+    grid-area:body;
+    justify-content:space-around;
+    grid-column:first, second;
+    grid-row:dos, quatro;
+
+}
+.item-2{
+    grid-area:footer;
+    grid-column:first, second;
+    grid-row:quatro, last;
+}
+.item-3{
+    grid-area:footer;
+    grid-column:second, third;
+    grid-row:quatro, last;
+}
+.item-4{
+    grid-area:footer;
+    grid-column:third, end;
+    grid-row:quatro, last;
+}
