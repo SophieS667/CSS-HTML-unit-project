@@ -1,3 +1,34 @@
+/* CSS for the navigation bar */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center align the navigation links */
+}
+
+nav ul.navbar li {
+    display: inline;
+}
+
+nav ul.navbar li a {
+    display: inline-block;
+    background-color: #555; /* Button background color */
+    color: white; /* Text color of the links */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-right: 10px; /* Space between buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+}
+
+nav ul.navbar li a:hover {
+    background-color: #555; /* Background color of the links on hover */
+}
 /*Default browser styles */
 body {
     font-family: Arial, sans-serif;
@@ -11,9 +42,15 @@ header {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
+header h1{
+    background-color: #393939;
+}
+header h3{
+    background-color:  #393939;
+}
 /* Style for the main content area (pretty much just removed the margin) */
 h1 {
     margin: 0;
@@ -21,7 +58,7 @@ h1 {
 
 /* Adds padding, centers content, and sets a max width the main can be */
 main {
-    max-width: 800px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -39,7 +76,7 @@ main {
     border: 1px solid #ccc;
     background-color: #fff;
     text-align: center;
-    padding: 35px;
+    padding: 20px;
 }
 
 /* Style for images within gallery items (makes sure the image fits its container) */
