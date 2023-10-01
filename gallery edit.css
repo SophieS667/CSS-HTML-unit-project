@@ -29,7 +29,8 @@ nav ul.navbar li a {
 nav ul.navbar li a:hover {
     background-color: #555; /* Background color of the links on hover */
 }
-/*Default browser styles */
+
+/* Default browser styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -45,12 +46,14 @@ header {
     padding: 10px 0;
 }
 
-header h1{
+header h1 {
     background-color: #393939;
 }
-header h3{
-    background-color:  #393939;
+
+header h3 {
+    background-color: #393939;
 }
+
 /* Style for the main content area (pretty much just removed the margin) */
 h1 {
     margin: 0;
@@ -72,7 +75,7 @@ main {
 
 /* Style for individual gallery items (color, border, padding amount, and flex) */
 .gallery-item {
-    flex: 2;
+    flex: 1; /* Changed flex value to 1 to distribute space evenly */
     border: 1px solid #ccc;
     background-color: #fff;
     text-align: center;
@@ -90,11 +93,88 @@ main {
     margin-top: 10px;
 }
 
-
 /* Style for the footer section (fancy little bottom, color, and spacing) */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px 0;
+}
+
+/* Add the following media query for screens up to 479px wide (phone sizes) */
+@media screen and (max-width: 479px) {
+    .gallery-item {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .gallery-item img {
+        max-width: 100%; /* Ensure images don't exceed the viewport width */
+    }
+
+    .gallery-item p {
+        font-size: 14px; /* Reduce font size for smaller screens */
+        margin-top: 10px; /* Add spacing between image and description */
+    }
+}
+/* Add this CSS to change the link color */
+.video-link {
+    color: #57b5e0; 
+    text-decoration: none; 
+}
+
+.video-link:hover {
+    text-decoration: underline;
+}
+/* Style for the footer section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+/* Style for the content within the footer */
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Style for individual sections within the footer (Contact Information, Important Dates, Credits) */
+.contact-info, .dates, .credits {
+    flex: 1;
+    padding: 0 20px;
+}
+
+/* Style for section titles */
+h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Style for links within the Credits section */
+.credits a {
+    color: #428ae9; /* Change this to your desired link color */
+    text-decoration: none;
+}
+
+.credits a:hover {
+    text-decoration: underline; /* Add underline on hover (optional) */
+}
+
+/* Media query for responsiveness (adjust as needed) */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-info, .dates, .credits {
+        flex: none;
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
 }
