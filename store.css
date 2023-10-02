@@ -29,36 +29,70 @@ nav ul.navbar li a {
 nav ul.navbar li a:hover {
     background-color: #555; /* Background color of the links on hover */
 }
-body{
-    display:grid;
-    gap:5px;
-
-grid-template-columns: [first] 1fr [second] 1fr [third] 1fr [end];
-grid-template-rows: [uno] 1fr [dos] 1fr [tres] 1fr [quatro] 1fr [last] 1fr;
-
-justify-items: stretch;
-align-items: stretch;
+body {
+    margin: 0;
+    padding: 0;
 }
 
-.item-1{
-    grid-area:body;
-    justify-content:space-around;
-    grid-column:first, second;
-    grid-row:dos, quatro;
+/* Create the grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns of equal width */
+    grid-template-rows: repeat(6, 1fr); /* 5 rows of equal height */
+    gap: 10px; /* Gap between grid items */
+    width: 80%; /* Set the width of the grid container */
+    margin: 20px auto; /* Center the grid horizontally and add some margin */
+    border: 1px solid #333; /* Optional border for visualization */
+    background-image: url('https://pixabay.com/vectors/flowers-abstract-ethnic-pattern-8255934/'); /* Set the URL of your background image */
+    background-size: cover; /* Optional: Scale the image to cover the entire container */
+    background-repeat: no-repeat; /* Optional: Prevent image from repeating */
+}
 
+/* Style the grid items */
+.grid-item {
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #999; /* Optional border for visualization */
 }
-.item-2{
-    grid-area:footer;
-    grid-column:first, second;
-    grid-row:quatro, last;
+.logo{
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #999; /* Optional border for visualization */
+    grid-row:1 / span 2;
+    grid-column:2 / span 3;
 }
-.item-3{
-    grid-area:footer;
-    grid-column:second, third;
-    grid-row:quatro, last;
+.footer{
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #999; /* Optional border for visualization */
+    grid-row:3 / span 1;
+    grid-column:2;
+    
 }
-.item-4{
-    grid-area:footer;
-    grid-column:third, end;
-    grid-row:quatro, last;
+.footer2{
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #999; /* Optional border for visualization */
+    grid-row:3 / span 1;
+    grid-column:3;
+    
 }
+.footer3{
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #999; /* Optional border for visualization */
+    grid-row:3 / span 1;
+    grid-column:4;
+    
+}
+
