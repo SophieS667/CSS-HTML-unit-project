@@ -4,18 +4,18 @@ nav {
     padding: 10px 0;
 }
 
-nav ul.navbar {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     text-align: center; /* Center align the navigation links */
 }
 
-nav ul.navbar li {
+nav ul li {
     display: inline;
 }
 
-nav ul.navbar li a {
+nav ul li a {
     display: inline-block;
     background-color: #555; /* Button background color */
     color: white; /* Text color of the links */
@@ -26,23 +26,23 @@ nav ul.navbar li a {
     border-radius: 5px; /* Rounded corners for buttons */
 }
 
-nav ul.navbar li a:hover {
+nav ul li a:hover {
     background-color: #555; /* Background color of the links on hover */
 }
 body {
     margin: 0;
     padding: 0;
+    background-image: url(protruding-squares.svg);
 }
 
 /* Create the grid */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 5 columns of equal width */
-    grid-template-rows: repeat(6, 1fr); /* 5 rows of equal height */
+    grid-template-rows: repeat(3, 1fr); /* 5 rows of equal height */
     gap: 10px; /* Gap between grid items */
     width: 80%; /* Set the width of the grid container */
     margin: 20px auto; /* Center the grid horizontally and add some margin */
-    border: 1px solid #333; /* Optional border for visualization */
     background-image: url('https://pixabay.com/vectors/flowers-abstract-ethnic-pattern-8255934/'); /* Set the URL of your background image */
     background-size: cover; /* Optional: Scale the image to cover the entire container */
     background-repeat: no-repeat; /* Optional: Prevent image from repeating */
@@ -54,14 +54,12 @@ body {
     padding: 20px;
     text-align: center;
     font-size: 18px;
-    border: 1px solid #999; /* Optional border for visualization */
 }
 .logo{
     background-color: #ccc;
     padding: 20px;
     text-align: center;
     font-size: 18px;
-    border: 1px solid #999; /* Optional border for visualization */
     grid-row:1 / span 2;
     grid-column:2 / span 3;
 }
@@ -70,7 +68,6 @@ body {
     padding: 20px;
     text-align: center;
     font-size: 18px;
-    border: 1px solid #999; /* Optional border for visualization */
     grid-row:3 / span 1;
     grid-column:2;
     
@@ -80,7 +77,6 @@ body {
     padding: 20px;
     text-align: center;
     font-size: 18px;
-    border: 1px solid #999; /* Optional border for visualization */
     grid-row:3 / span 1;
     grid-column:3;
     
@@ -90,9 +86,23 @@ body {
     padding: 20px;
     text-align: center;
     font-size: 18px;
-    border: 1px solid #999; /* Optional border for visualization */
     grid-row:3 / span 1;
     grid-column:4;
     
 }
+/* Style for the header section */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
 
+
+/* Style for the footer section (fancy little bottom, color, and spacing) */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
