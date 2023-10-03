@@ -9,10 +9,13 @@ nav ul.navbar {
     margin: 0;
     padding: 0;
     text-align: center; /* Center align the navigation links */
+    margin: 25px;
 }
 
 nav ul.navbar li {
     display: inline;
+    float: left;
+
 }
 
 nav ul.navbar li a {
@@ -177,4 +180,8 @@ h4 {
         margin-bottom: 20px;
         text-align: center;
     }
+}
+input{
+    padding-right: 200px;
+    margin-right: 50px;
 }
