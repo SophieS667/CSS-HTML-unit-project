@@ -7,7 +7,7 @@ body, h1, h2, p {
 /* Global styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-image: url(protruding-squares\ \(1\).svg);
 }
 
 .container {
@@ -16,17 +16,6 @@ body {
     padding: 20px;
 }
 
-/* Header styles */
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-
-header h1 {
-    font-size: 36px;
-}
 
 /* Navigation styles */
 nav {
@@ -45,10 +34,13 @@ nav ul.navbar {
     margin: 0;
     padding: 0;
     text-align: center; /* Center align the navigation links */
+    margin: 25px;
 }
 
 nav ul.navbar li {
     display: inline;
+    float: left;
+
 }
 
 nav ul.navbar li a {
@@ -65,6 +57,22 @@ nav ul.navbar li a {
 nav ul.navbar li a:hover {
     background-color: #555; /* Background color of the links on hover */
 }
+/* Style for the header section */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header h1 {
+    background-color: #393939;
+}
+
+header h3 {
+    background-color: #393939;
+}
+
 
 /* Services section styles */
 .services {
@@ -119,4 +127,8 @@ footer {
         margin-bottom: 20px;
         text-align: center;
     }
+}
+input{
+    padding-right: 200px;
+    margin-right: 50px;
 }
