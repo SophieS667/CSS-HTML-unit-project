@@ -50,13 +50,13 @@ body {
 
 /* Style the grid items */
 .grid-item {
-    background-color: #ccc;
+    background-color: white;
     padding: 20px;
     text-align: center;
     font-size: 18px;
 }
 .logo{
-    background-color: #ccc;
+    background-color: white;
     padding: 20px;
     text-align: center;
     font-size: 18px;
@@ -64,7 +64,7 @@ body {
     grid-column:2 / span 3;
 }
 .footer{
-    background-color: #ccc;
+    background-color: white;
     padding: 20px;
     text-align: center;
     font-size: 18px;
@@ -73,7 +73,7 @@ body {
     
 }
 .footer2{
-    background-color: #ccc;
+    background-color: white;
     padding: 20px;
     text-align: center;
     font-size: 18px;
@@ -82,7 +82,7 @@ body {
     
 }
 .footer3{
-    background-color: #ccc;
+    background-color: white;
     padding: 20px;
     text-align: center;
     font-size: 18px;
