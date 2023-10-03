@@ -147,3 +147,43 @@ input{
     padding-right: 200px;
     margin-right: 50px;
 }
+/* Testimonials section styles */
+.testimonials {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.testimonial {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial img {
+    max-width: 80px;
+    height: auto;
+    border-radius: 50%; /* Make customer images circular */
+}
+
+.testimonial p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.customer-name {
+    font-weight: bold;
+    margin-top: 10px;
+}
+/* Change the color of h2 to aliceblue */
+.testimonials h2 {
+    color: aliceblue;
+}
+
+
+
+
+
+
