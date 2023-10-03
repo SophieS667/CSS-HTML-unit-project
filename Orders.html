@@ -53,33 +53,122 @@
     </div>
 
 
+<ul>
+<strong><legend>Pet Size</legend></strong>
+<label for="Dog size">Select a size:</label>
+<select id="Dog size" name="Dog size">
+    <option value="Small">Small</option>
+    <option value="Medium">Medium</option>
+    <option value="Large">Large</option>
+    
+</select>
+
+</ul>
+
     <ul>
         <div class="contact">
       <strong> <legend>Contact Information</legend></strong>
         </div>
         <br>
     
-        <label for="Name">Name:</label>
-        <strong><abbr title="Required">*</abbr></strong>
+        <label for="Name"></label>
         <input type="text" name="username" placeholder="Name">
-        <br>
         
-        <label for="E_mail">E_mail:</label>
-        <strong><abbr title="Required">*</abbr></strong>
+        
+        <label for="E_mail"></label>
         <input type="text" name="E_mail" placeholder="E_mail">
-        <br>
+        
     
-        <label for="Password">Password:</label>
-        <strong><abbr title="Required">*</abbr></strong>
+        <label for="Password"></label>
         <input type="text" name="Password" placeholder="Password">
-    </ul>
-    <br>
-    <br>
+        <br>
+
+        <label for="Country"></label>
+        <input type="text" name="Country" placeholder="Country">
+
+        <label for="City"></label>
+        <input type="text" name="City" placeholder="City">
+
+        <label for="State"></label>
+        <input type="text" name="State" placeholder="State">
+        <br>
+
+        <label for="Street Adress"></label>
+        <input type="text" name="Street Adress" placeholder="Street Adress">
+        
+        
+
+
+</ul>
+
+<br>
+</fieldset>
+<br>
+
+<fieldset>
+<ul>
+    <strong><h1>Credit Card Information</h1></strong>
     
-   
+    <label for="First Name"></label>
+    <input type="text" name="First Name" placeholder="First Name">
+    
+    <label for="Last Name"></label>
+    <input type="text" name="Last Name" placeholder="Last Name">
+    <br>
+
+    <ul>
+        <br>
+        <label for="Payment Type">Select a Payment Type:</label>
+        <select id="Payment Type" name="Payment Type">
+            <option value="Visa">Visa</option>
+            <option value="Amex">AMEX</option>
+            <option value="Gpay">Gpay</option>
+            <option value="PayPal">PayPal</option>
+            
+        </select>
+        
+        </ul>
+    <br>
+
+    <label for="MM/YY"></label>
+    <input type="text" name="MM/YY" placeholder="MM/YY">
+    
+    <label for="CVC"></label>
+    <input type="text" name="CVC" placeholder="CVC">
+    
+    <label for="1234"></label>
+    <input type="text" name="1234" placeholder="1234">
+    
+        
+    
+</fieldset>
+
+</ul>
     </form>
-    </fieldset>
-    
+
+<br>
+
+<form id="order-form" action="#" method="post">
+    <!-- Other form fields go here -->
+    <input type="submit" value="Submit Order">
+</form>
+<div id="confirmation-message" class="hidden">
+    Thank you for your purchase
+</div>
+<style>
+    /* Initially hide the confirmation message */
+    #confirmation-message {
+        display: none;
+    }
+
+    /* Show the confirmation message when the form is submitted */
+    #order-form:active + #confirmation-message {
+        display: block;
+    }
+</style>
+
+   
+ <br>   
     <footer>
         Made By Shafer Industries
     </footer>

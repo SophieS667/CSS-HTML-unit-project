@@ -31,3 +31,21 @@ nav ul li a:hover {
 .payment-method{
     text-align: center;
 }
+.hidden {
+    display: none;
+}
+
+/* Style the label to look like a button */
+#confirmation-label {
+    display: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Show the label when the checkbox is checked */
+#confirmation-checkbox:checked + #confirmation-label {
+    display: block;
+}
