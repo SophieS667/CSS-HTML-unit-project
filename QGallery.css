@@ -1,0 +1,142 @@
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+   
+}
+
+
+header h1 {
+    background-color: #393939;
+}
+
+
+header h3 {
+    background-color: #393939;
+}
+
+
+h1 {
+    margin: 0;
+}
+input{
+    padding-right: 20px;
+    margin-right: 5px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(./subtle-prism.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nav-container {
+    background-color: #333;
+    padding: 10px 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style for the gallery section (placement and wrap of items) */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Style for individual gallery items (color, border, padding amount, and flex) */
+.gallery-item {
+    flex: 1; /* Changed flex value to 1 to distribute space evenly */
+    border: 1px solid #ccc;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style for images within gallery items (makes sure the image fits its container) */
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style for image descriptions (just gives it some space) */
+.gallery-item p {
+    margin-top: 10px;
+}
+
+
+/* Add the following media query for screens up to 479px wide (phone sizes) */
+@media screen and (max-width: 479px) {
+    .gallery-item {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .gallery-item img {
+        max-width: 100%; /* Ensure images don't exceed the viewport width */
+    }
+
+    .gallery-item p {
+        font-size: 14px; /* Reduce font size for smaller screens */
+        margin-top: 10px; /* Add spacing between image and description */
+    }
+}
+/* Add this CSS to change the link color */
+.video-link {
+    color: #57b5e0; 
+    text-decoration: none; 
+}
+
+.video-link:hover {
+    text-decoration: underline;
+}
+/* Style for the footer section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+
+/* Media query for responsiveness (adjust as needed) */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-info, .dates, .credits {
+        flex: none;
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+input{
+    padding-right: 200px;
+    margin-right: 50px;
+}
